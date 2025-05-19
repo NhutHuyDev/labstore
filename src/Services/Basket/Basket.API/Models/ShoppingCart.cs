@@ -15,7 +15,6 @@
         // Required for Mapping
         public ShoppingCart()
         {
-
         }
     }
 }

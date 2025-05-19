@@ -1,6 +1,6 @@
 ﻿namespace Basket.API.Basket.DeleteBasket
 {
-    public record DeleteBasketResponse(string UserName);
+    public record DeleteBasketResponse(bool IsSuccess);
 
     public class DeleteBasketEndpoint : ICarterModule
     {

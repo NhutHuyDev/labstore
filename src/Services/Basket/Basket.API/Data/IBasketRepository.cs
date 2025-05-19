@@ -2,8 +2,8 @@
 {
     public interface IBasketRepository
     {
-        Task<ShoppingCart> GetBasket(string UserName, CancellationToken cancellationToken);
-        Task<ShoppingCart> StoreBasket(ShoppingCart Cart, CancellationToken cancellationToken);
-        Task<bool> DeleteBasket(string UserName, CancellationToken cancellationToken);
+        Task<ShoppingCart> GetBasket(string userName, CancellationToken cancellationToken);
+        Task<ShoppingCart> StoreBasket(ShoppingCart cart, CancellationToken cancellationToken);
+        Task<bool> DeleteBasket(string userName, CancellationToken cancellationToken);
     }
 }
