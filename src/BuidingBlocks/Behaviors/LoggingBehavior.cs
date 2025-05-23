@@ -4,16 +4,16 @@ using System.Diagnostics;
 
 namespace BuidingBlocks.Behaviors
 {
-    public class LoggingBehavior<TRequest, TReponse>
-        (ILogger<LoggingBehavior<TRequest, TReponse>> logger)
-        : IPipelineBehavior<TRequest, TReponse>
-        where TRequest : notnull, IRequest<TReponse>
-        where TReponse : notnull
+    public class LoggingBehavior<TRequest, TResponse>
+        (ILogger<LoggingBehavior<TRequest, TResponse>> logger)
+        : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : notnull, IRequest<TResponse>
+        where TResponse : notnull
     {
-        public async Task<TReponse> Handle(TRequest request, RequestHandlerDelegate<TReponse> next, CancellationToken cancellationToken)
+        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
         {
             logger.LogInformation("[START] Handle Request={Request} - Response={Response} - RequestData={RequestData}",
-                    typeof(TRequest).Name, typeof(TReponse).Name, request
+                    typeof(TRequest).Name, typeof(TResponse).Name, request
                 );
 
             var timer = new Stopwatch();
@@ -31,7 +31,7 @@ namespace BuidingBlocks.Behaviors
             }
 
             logger.LogInformation("[END] Handle {Request} with {Response}",
-                typeof(TRequest).Name, typeof(TReponse).Name);
+                typeof(TRequest).Name, typeof(TResponse).Name);
 
             return response;
         }
