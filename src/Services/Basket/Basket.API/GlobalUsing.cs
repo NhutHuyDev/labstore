@@ -12,3 +12,5 @@ global using Basket.API.Exceptions;
 
 global using BuidingBlocks.Behaviors;
 global using BuidingBlocks.Exceptions.Handler;
+
+global using Basket.API.Data;
