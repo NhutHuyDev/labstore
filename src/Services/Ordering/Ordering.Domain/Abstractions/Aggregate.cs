@@ -8,7 +8,7 @@ namespace Ordering.Domain.Abstractions
 
         public void AddDomainEvent(IDomainEvent domainEvent)
         {
-            _domainEvents.Add(domainEvent);
+            _domainEvents.Add(domainEvent); 
         }
 
         public IDomainEvent[] ClearDomainEvents()

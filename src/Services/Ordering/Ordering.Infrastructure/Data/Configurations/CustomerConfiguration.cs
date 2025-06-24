@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Ordering.Domain.Models;
 using Ordering.Domain.ValueObjects;
 
-namespace Ordering.Infrastructure.Configurations
+namespace Ordering.Infrastructure.Data.Configurations
 {
     public class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     {
