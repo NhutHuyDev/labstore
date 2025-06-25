@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace BuidingBlocks.Behaviors
+namespace BuildingBlocks.Behaviors
 {
     public class LoggingBehavior<TRequest, TResponse>
         (ILogger<LoggingBehavior<TRequest, TResponse>> logger)

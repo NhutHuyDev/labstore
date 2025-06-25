@@ -3,7 +3,7 @@ using Grpc.Core.Interceptors;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
-namespace BuidingBlocks.Grpc
+namespace BuildingBlocks.Grpc
 {
     public class LoggingGrpcInterceptor(ILogger<LoggingGrpcInterceptor> logger)
         : Interceptor

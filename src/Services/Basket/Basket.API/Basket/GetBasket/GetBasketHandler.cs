@@ -1,6 +1,6 @@
 ﻿using Basket.API.Data;
 using Basket.API.Models;
-using BuidingBlocks.CQRS;
+using BuildingBlocks.CQRS;
 
 namespace Basket.API.Basket.GetBasket
 {

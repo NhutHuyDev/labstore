@@ -2,7 +2,7 @@
 global using Mapster;
 global using MediatR;
 
-global using BuidingBlocks.CQRS;
+global using BuildingBlocks.CQRS;
 global using Catalog.API.Models;
 global using Marten;
 
@@ -10,6 +10,6 @@ global using FluentValidation;
 
 global using Catalog.API.Exceptions;
 
-global using BuidingBlocks.Behaviors;
-global using BuidingBlocks.Exceptions;
-global using BuidingBlocks.Exceptions.Handler;
+global using BuildingBlocks.Behaviors;
+global using BuildingBlocks.Exceptions;
+global using BuildingBlocks.Exceptions.Handler;

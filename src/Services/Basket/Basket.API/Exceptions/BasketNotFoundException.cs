@@ -1,4 +1,4 @@
-﻿using BuidingBlocks.Exceptions;
+﻿using BuildingBlocks.Exceptions;
 
 namespace Basket.API.Exceptions
 {

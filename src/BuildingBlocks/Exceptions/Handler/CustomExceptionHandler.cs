@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace BuidingBlocks.Exceptions.Handler
+namespace BuildingBlocks.Exceptions.Handler
 {
     public class CustomExceptionHandler(ILogger<CustomExceptionHandler> logger)
         : IExceptionHandler

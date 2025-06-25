@@ -1,4 +1,4 @@
-﻿global using BuidingBlocks.Grpc;
+﻿global using BuildingBlocks.Grpc;
 global using Discount.Grpc.Data;
 global using Discount.Grpc.Services;
 global using Grpc.Core;
