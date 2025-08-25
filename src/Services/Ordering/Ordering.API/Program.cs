@@ -13,7 +13,7 @@ namespace Ordering.API
             builder.Services
                 .AddApplicationServices()
                 .AddInfrastructureServices(builder.Configuration)
-                .AddApiServices();
+                .AddApiServices(builder.Configuration);
 
             var app = builder.Build();
 
@@ -23,7 +23,7 @@ namespace Ordering.API
             {
                 await app.InitialiseDatabaseAsync();
             }
-
+ 
             app.Run();
         }
     }
